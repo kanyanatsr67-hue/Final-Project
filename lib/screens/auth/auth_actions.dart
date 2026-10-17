@@ -8,10 +8,20 @@ import 'login.dart';
 
 void enter(BuildContext c, U u) {
   S.i.me = u;
-  Navigator.pushAndRemoveUntil(c, MaterialPageRoute(builder: (_) => u.admin ? const AdminHome() : const Home()), (r) => false);
+  Navigator.pushAndRemoveUntil(
+    c,
+    MaterialPageRoute(
+      builder: (_) => u.admin ? const AdminHome() : const Home(),
+    ),
+    (r) => false,
+  );
 }
 
 void logout(BuildContext c) {
   S.i.me = null;
-  Navigator.pushAndRemoveUntil(c, MaterialPageRoute(builder: (_) => const Login()), (r) => false);
+  Navigator.pushAndRemoveUntil(
+    c,
+    MaterialPageRoute(builder: (_) => const Login()),
+    (r) => false,
+  );
 }

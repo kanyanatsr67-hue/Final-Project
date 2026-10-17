@@ -10,6 +10,6 @@ void main() {
     expect(find.text('BOARD GAME CAFE'), findsOneWidget);
     expect(find.text('เข้าสู่ระบบ'), findsOneWidget);
     expect(find.text('ชื่อผู้ใช้'), findsOneWidget);
-    expect(find.text('รหัสผ่าน'), findsOneWidget);
+    expect(find.text('รหัสผ่าน'), findsOneWidget)
   });
 }
